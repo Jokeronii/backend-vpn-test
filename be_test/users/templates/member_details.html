@@ -1,0 +1,10 @@
+{% extends 'master.html' %} {% block title %}Member Details by: {{member_id.firstname}} {{member_id.lastname}}{% endblock %} {% block content %}
+<h1>{{ member_id.firstname }} {{ member_id.lastname }}</h1>
+<p>First Name: {{ member_id.firstname }}</p>
+<p>Last Name: {{ member_id.lastname }}</p>
+<p>Phone: 123456789</p>
+<p>Member Since: <b>2025</b></p>
+
+<p>Back to <a href="/members">Members</a></p>
+
+{% endblock %}
